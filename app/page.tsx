@@ -17,11 +17,11 @@ const LanguageContext = createContext({
 const messages = {
   es: {
     about: 'Sobre mí',
-    projects: 'Proyectos',
+    projects: 'Experiencia',
     contact: 'Contacto',
     downloadCV: 'Descargar CV',
-    role: 'Desarrollador Web Frontend | Especialista en React',
-    aboutMe: 'Soy un desarrollador web apasionado por crear experiencias de usuario excepcionales. Con experiencia en React y otras tecnologías modernas de frontend, me esfuerzo por construir aplicaciones web eficientes y escalables.',
+    role: 'QA Engineer | Entusiasta',
+    aboutMe: 'QA con más de 6 años de experiencia en el diseño, desarrollo y ejecución de scripts de prueba. Experiencia de 1 año en automatización utilizando Java y Cypress. Amplia comprensión de las metodologías de desarrollo de software y pruebas. Habilidades en la creación de informes de errores y seguimiento hasta su resolución.',
     project1Title: 'Proyecto 1',
     project1Desc: 'Una breve descripción del proyecto',
     project2Title: 'Proyecto 2',
@@ -37,11 +37,11 @@ const messages = {
   },
   en: {
     about: 'About',
-    projects: 'Projects',
+    projects: 'Experience',
     contact: 'Contact',
     downloadCV: 'Download CV',
-    role: 'Frontend Web Developer | React Specialist',
-    aboutMe: 'I am a web developer passionate about creating exceptional user experiences. With experience in React and other modern frontend technologies, I strive to build efficient and scalable web applications.',
+    role: 'QA Engineer | Entrepreneur',
+    aboutMe: 'QA with 6+ years of expertise in designing, developing, and executing test scripts. Experience of 1 year in automation testing using Java and Cypress. Strong understanding of software development and testing methodologies. Skilled in creating bug reports and tracking them to resolution.',
     project1Title: 'Project 1',
     project1Desc: 'A brief description of the project',
     project2Title: 'Project 2',
@@ -107,7 +107,7 @@ function PortfolioContent() {
     <div className="flex flex-col min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
       <header className="fixed top-0 left-0 right-0 z-50 px-4 lg:px-6 h-14 flex items-center border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 bg-opacity-90 dark:bg-opacity-90 backdrop-blur-sm">
         <Link className="flex items-center justify-center" href="#">
-          <span className="font-bold">Tu Nombre</span>
+          <span className="font-bold">PEDRO CASTRO</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <button onClick={() => scrollToSection('about')} className="text-sm font-medium hover:underline underline-offset-4">
@@ -135,20 +135,20 @@ function PortfolioContent() {
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-                  Tu Nombre
+                  Pedro Castro
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
                   {t.role}
                 </p>
               </div>
               <div className="space-x-4">
-                <Link href="https://github.com/tuusuario" target="_blank" rel="noopener noreferrer">
+                <Link href="https://github.com/castrosoft" target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" size="icon">
                     <GithubIcon className="h-4 w-4" />
                     <span className="sr-only">GitHub</span>
                   </Button>
                 </Link>
-                <Link href="https://linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer">
+                <Link href="https://www.linkedin.com/in/cp-castropedro" target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" size="icon">
                     <LinkedinIcon className="h-4 w-4" />
                     <span className="sr-only">LinkedIn</span>
@@ -224,7 +224,7 @@ function PortfolioContent() {
         </section>
       </main>
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t border-gray-200 dark:border-gray-800">
-        <p className="text-xs text-gray-500 dark:text-gray-400">© 2023 Tu Nombre. {t.allRightsReserved}</p>
+        <p className="text-xs text-gray-500 dark:text-gray-400">© 2024 Pedro Castro. {t.allRightsReserved}</p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
           <Link className="text-xs hover:underline underline-offset-4" href="#">
             {t.termsOfService}
